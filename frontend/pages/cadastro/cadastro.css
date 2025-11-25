@@ -1,0 +1,9 @@
+/* Minimal overrides for the cadastro page */
+.login-card{ max-width: 560px; }
+.login-form input{ margin-bottom: 18px; }
+.signup-cta{ text-align:center; margin-top: 12px; color: #6b6b6b; }
+.signup-cta a{ color: #0a6b74; font-weight: 600; text-decoration:none; }
+.signup-cta a:hover{ text-decoration: underline; }
+
+/* form spacing specific to signup */
+.login-form label{ margin-top: 6px; }

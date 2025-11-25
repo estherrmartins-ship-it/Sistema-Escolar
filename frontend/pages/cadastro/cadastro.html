@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cadastre-se - Secretaria Escolar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="cadastro.css">
+  </head>
+  <body>
+    <main class="page">
+      <div class="login-card" role="region" aria-labelledby="cad-title">
+        <header class="brand">
+          <h1 id="cad-title">Cadastro</h1>
+          <p class="tagline">Crie uma conta para acessar o sistema</p>
+        </header>
+
+        <form id="cad-form" class="login-form" novalidate>
+          <label for="name">Nome</label>
+          <input id="name" name="name" type="text" placeholder="Seu nome completo" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="seu.email@escola.com" required />
+
+          <label for="password">Senha</label>
+          <input id="password" name="password" type="password" placeholder="Mínimo 8 caracteres" required minlength="8" />
+
+          <label for="confirm">Confirmar Senha</label>
+          <input id="confirm" name="confirm" type="password" placeholder="Repita a senha" required minlength="8" />
+
+          <button type="submit" class="btn-submit">Cadastrar</button>
+        </form>
+
+        <p class="signup-cta">Já tem uma conta? <a href="../../index.html">Entrar</a></p>
+      </div>
+    </main>
+    <script src="cadastro.js"></script>
+  </body>
+  </html>

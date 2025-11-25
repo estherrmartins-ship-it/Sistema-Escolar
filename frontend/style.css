@@ -1,0 +1,105 @@
+/* Reset & base */
+* { box-sizing: border-box; }
+html, body { height:100%; }
+body {
+	margin: 0;
+	font-family: Inter, Poppins, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+	background: linear-gradient(180deg,#f3f5f6 0%, #eef2f3 100%);
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	min-height: 100vh;
+}
+
+.page {
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	width: 100%;
+	max-width: 900px;
+	padding: 16px 24px; /* smaller padding so card centers nicely */
+}
+
+.login-card{
+	width: 560px;
+	background: #ffffff;
+	border-radius: 12px;
+	padding: 40px 48px;
+	box-shadow: 0 20px 40px rgba(14,32,39,0.08), inset 0 -1px 0 rgba(0,0,0,0.02);
+	border: 1px solid rgba(0,0,0,0.03);
+}
+
+.brand h1{
+	margin: 0 0 8px 0;
+	font-family: Poppins, Inter, sans-serif;
+	font-weight: 700;
+	color: #035e69; /* teal */
+	font-size: 32px;
+	letter-spacing: -0.5px;
+}
+
+.tagline{
+	margin:0 0 28px 0;
+	color: #8a9aa0;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+.login-form label{
+	display:block;
+	margin-bottom: 8px;
+	color: #2a2a2a;
+	font-size: 13px;
+	font-weight:600;
+}
+
+.login-form input{
+	width:100%;
+	padding: 12px 16px;
+	border-radius: 10px;
+	border: 1px solid #e6e9eb;
+	background: #fff;
+	margin-bottom: 18px;
+	font-size: 14px;
+	color: #333;
+}
+
+.login-form input::placeholder{
+	color: #9aa4ad;
+	font-weight: 300;
+}
+
+.btn-submit{
+	margin-top: 8px;
+	width:100%;
+	padding: 12px 14px;
+	border-radius: 8px;
+	background:#0a6b74;
+	color: white;
+	font-weight:700;
+	font-size: 14px;
+	border: none;
+	cursor: pointer;
+}
+
+.btn-submit:hover{ background:#095e67; }
+
+.divider{
+	margin: 28px 0 0 0;
+	border: 0;
+	height: 1px;
+	background: linear-gradient(90deg, transparent, #e9ecef, transparent);
+}
+
+.signup-cta{ text-align:center; margin-top: 12px; color: #6b6b6b; }
+.signup-cta a{ color: #0a6b74; font-weight: 600; text-decoration:none; }
+.signup-cta a:hover{ text-decoration: underline; }
+
+/* Responsive */
+@media (max-width: 640px){
+	.login-card{ width: 100%; padding: 28px; }
+	.brand h1{ font-size: 28px; }
+}
+
