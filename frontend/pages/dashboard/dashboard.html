@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Academic Manager - Dashboard</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="../../style.css" />
+		<link rel="stylesheet" href="dashboard.css" />
+	</head>
+	<body>
+		<div class="app-wrap">
+			<aside class="sidebar" role="navigation" aria-label="Principal">
+				<div class="sidebar-brand">
+					<div class="brand-avatar">AM</div>
+					<div class="brand-name">Academic</div>
+				</div>
+				<nav class="nav-list">
+					<a class="nav-item active" href="#">Dashboard</a>
+					<a class="nav-item" href="#">Alunos</a>
+					<a class="nav-item" href="#">Turmas</a>
+					<a class="nav-item" href="#">Horários</a>
+					<a class="nav-item" href="#">Relatórios</a>
+					<a class="nav-item" href="#">Configurações</a>
+				</nav>
+			</aside>
+
+			<main class="main-panel">
+				<header class="topbar">
+					<div class="topbar-title">
+						<h1>Dashboard</h1>
+						<p class="subtitle">Bem-vindo de volta ao Academic Manager</p>
+					</div>
+					<div class="topbar-actions">
+						<button class="btn-notify">Notificações</button>
+						<div class="profile">AD</div>
+					</div>
+				</header>
+
+				<section class="stats-row">
+					<div class="stat-card stat-1">
+						<small>Total de Alunos</small>
+						<div class="stat-value">1,245</div>
+						<div class="stat-delta delta-positive">+12% este mês</div>
+					</div>
+					<div class="stat-card stat-2">
+						<small>Turmas Ativas</small>
+						<div class="stat-value stat-emphasis">42</div>
+						<div class="stat-delta delta-positive">+3 este semestre</div>
+					</div>
+					<div class="stat-card stat-3">
+						<small>Professores</small>
+						<div class="stat-value">58</div>
+						<div class="stat-delta">Todos ativos</div>
+					</div>
+					<div class="stat-card stat-4">
+						<small>Taxa de Presença</small>
+						<div class="stat-value stat-percent">94.5%</div>
+						<div class="stat-delta delta-positive">+2.3% vs. mês anterior</div>
+					</div>
+				</section>
+
+				<section class="dashboard-grid">
+					<div class="panel growth">
+						<h3>Crescimento de Alunos</h3>
+						<canvas id="growthChart" width="800" height="350"></canvas>
+					</div>
+					<div class="panel performance">
+						<h3>Desempenho</h3>
+						<canvas id="performanceChart" width="300" height="300"></canvas>
+						<div class="legend">
+							<div class="legend-row"><span class="dot dot-xl"></span> Bom: 45%</div>
+							<div class="legend-row"><span class="dot dot-success"></span> Satisfatório: 15%</div>
+							<div class="legend-row"><span class="dot dot-alert"></span> Excelente: 35%</div>
+							<div class="legend-row"><span class="dot dot-danger"></span> Insuficiente: 5%</div>
+						</div>
+					</div>
+				</section>
+			</main>
+		</div>
+
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+		<script src="dashboard.js"></script>
+	</body>
+	</html>
